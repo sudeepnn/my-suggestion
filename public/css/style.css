@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    
+}
+body{
+    background-color: #ECF9FF;
+
+}
+
+.top{
+   background-color: #3A98B9;
+    height: 100px;
+    width: 100vw;
+    justify-content: start;
+    border: 1px solid black;
+}
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+.name{
+   color: white;
+   font-family: cursive;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#log{
+    position: absolute;
+    right: 120px;
+    font-size: 20px;
+    
+}
+#reg{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+
+.hov:hover{
+    cursor: pointer ;
+    transform: scale(1.1);
+    color: white;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+.child{
+    top: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    width: 40%;
+    box-shadow: 10px 10px 10px 10px #aaa;
+}
+.con{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+   
+
+}
+
+.text{
+    position: relative;
+    margin: 50px;
+    padding: 20px;
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+
+}
+.imgs
+{
+    position: relative;
+ 
+}
+.postbut{
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+}
+.god{
+    display: flex;
+    flex-direction: row;
+    
+}
+.post {
+    float: left;
+    width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 50px;
+    margin-right: 10px;
+   height: 600px;
+    overflow-y: scroll;
+    
+}
+
+.formdiv {
+    float: right;
+    width: 40%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 50px;
+    height: 100%;
+   
+}
+.item{
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+    width: auto;
+   
+    background-color: #2AA9D2;
+    border: 1px solid black;
+}

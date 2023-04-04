@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SUGGESTION</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top">
+
+        <h1  style="margin: 20px;position: absolute;color: white;font-family: cursive;" >My SUGGESTION</h1>
+
+           <div class="con" >
+            <img style="height: 35px;width: 35px;margin-right: 10px;" src="/images/user.png" alt="">
+            <p   style="font-size: 25px;" ><%=username%></p>
+           </div>
+
+           <form style="position: absolute;right: 30px;top: 50px;" action="/" method="post">
+            <input class="hov" style="border: none;outline: none;background-color: #3A98B9;font-size: 25px;" type="submit" value="Logout">
+        </form>
+
+    </div>
+    <div class="god">
+        <div class="post">
+            <% answer.forEach(function(item){ %>
+                <%if(item.movie==undefined && item.book==undefined && item.series==undefined && item.course==undefined){%>
+                <%console.log("adsdks") }else{%>
+                
+                 <div class="item">
+                    <table >
+                        <tr >
+                            <td style="font-family: cursive;"><h4><%=item.username%></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Movie: </td>
+                            <td><h4><%=item.movie%></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Series: </td>
+                            <td><h4><%=item.series%></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Course: </td>
+                            <td><h4><%=item.course%></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Book: </td>
+                            <td><h4><%=item.book%></h4></td>
+                        </tr>
+                    </table>
+                    
+                    
+                    
+                    
+                     <!-- <input type="checkbox" name="checkbox" value="<%=item._id%>"  onchange="this.form.submit()"> -->
+                     <!-- <p><%=item.name%></p> -->
+                 </div>
+               
+             <%}})%>
+           
+        </div>
+        <div class="formdiv">
+            
+            <h3 style="margin: 20px;">"The most powerful weapon on earth is the human soul on fire, and the most effective way to ignite it is by suggestion." - Ferdinand Foch</h3>
+             
+            <h1 style="margin: 20px;font-size: 40px;">Enter your suggestion: </h1>
+            <form action="/post" method="post">
+                <input type="hidden" name="username" value="<%=username%>">
+                <input type="hidden" name="password" value="<%=password%>">
+                <input style="margin: 10px; width: 50%;height: 30px;font-size: 20px;" type="text"
+                    placeholder="suggest a Movie" name="mname"> <br>
+                <input style="margin: 10px; width: 50%;height: 30px;font-size: 20px;" type="text"
+                    placeholder="suggest a Series" name="sname"> <br>
+                    <input style="margin: 10px; width: 50%;height: 30px;font-size: 20px;" type="text"
+                    placeholder="suggest a Course" name="cname"> <br>
+                    <input style="margin: 10px; width: 50%;height: 30px;font-size: 20px;" type="text"
+                    placeholder="suggest a Book" name="bname"> <br>
+                <input class="hov"
+                    style="margin: 10px; width: 50%;height: 30px;font-size: 20px;background-color: #2AA9D2;"
+                    type="submit" value="Post"> <br>
+            </form>
+            
+               <br> <br>
+            <tr >
+                <td><a style="text-decoration: none;" href="http://"><img style="height: 30px;width: 30px;margin-right: 5px;" src="/images/github.png" alt=""></a></td>
+                <td><a style="text-decoration: none;" href="http://"><img style="height: 30px;width: 30px;margin-right: 5px;" src="/images/linkedin.png" alt=""></a></td>
+                <td><a style="text-decoration: none;" href="http://"><img style="height: 30px;width: 30px;margin-right: 5px;" src="/images/instagram.png" alt=""></a></td>
+                
+            </tr>
+        </div>
+
+    </div>
+    
+    <div class="bottom">  
+            
+    </div>
+</body>
+</html>
