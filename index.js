@@ -20,7 +20,7 @@ const favschema=mongoose.Schema({
     book:String
 })
 
-favschema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ['password'] });
+favschema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: 'password' });
 
 const favuser=mongoose.model("favuser",favschema)
 
