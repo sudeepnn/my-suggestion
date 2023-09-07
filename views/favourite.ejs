@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="top">
+    <div style=" border: 1px solid black;" class="top">
 
-        <h1  style="margin: 20px;position: absolute;color: white;font-family: cursive;" >My SUGGESTION</h1>
+        <h1  style="margin: 20px;position: absolute;font-family: cursive;color: #1F8A70;" >My SUGGESTION</h1>
 
            <div class="con" >
             <img style="height: 35px;width: 35px;margin-right: 10px;" src="/images/user.png" alt="">
@@ -18,7 +18,7 @@
            </div>
 
            <form style="position: absolute;right: 30px;top: 50px;" action="/" method="post">
-            <input class="hov" style="border: none;outline: none;background-color: #3A98B9;font-size: 25px;" type="submit" value="Logout">
+            <input class="hov" style="border: none;outline: none;background-color: white;font-size: 25px;" type="submit" value="Logout">
         </form>
 
     </div>
@@ -63,8 +63,7 @@
         </div>
         <div class="formdiv">
             
-            <h3 style="margin: 20px;">"The most powerful weapon on earth is the human soul on fire, and the most effective way to ignite it is by suggestion." - Ferdinand Foch</h3>
-             
+            
             <h1 style="margin: 20px;font-size: 40px;">Enter your suggestion: </h1>
             <form action="/post" method="post">
                 <input type="hidden" name="username" value="<%=username%>">

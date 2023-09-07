@@ -9,8 +9,8 @@ app.set('view engine','ejs')
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-
-mongoose.connect("mongodb://localhost:27017/favouritedb")
+// mongodb+srv://sudeep:test123@cluster0.mpx93rw.mongodb.net/todolistdb
+mongoose.connect("mongodb+srv://sudeep:test123@cluster0.mpx93rw.mongodb.net/thoughtsdb")
 const favschema=mongoose.Schema({
     username:String,
     password:String,
@@ -139,7 +139,7 @@ app.post("/newuser",function(req,res){
         
     })
 
-app.listen(3000,function(){
-    console.log("server started on part 3000")
+app.listen(process.env.PORT ||3000,function(){
+    console.log("server started on port 3000")
 
 })
